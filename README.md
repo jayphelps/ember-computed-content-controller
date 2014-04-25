@@ -50,7 +50,7 @@ App.CommentController = Ember.ObjectController.extend({
 
 ```javascript
 App.PostController = Ember.ObjectController.extend({
-  comments: Ember.computed.injection('comments', 'content.comments', { singleton: true })
+  comments: Ember.computed.controller('comments', 'content.comments', { singleton: true })
 });
 ```
 
