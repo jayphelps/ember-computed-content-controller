@@ -1,8 +1,8 @@
 /**
- * ember-computed-controller v0.1.0
+ * ember-computed-content-controller v0.2.0
  * (c) 2014 Jay Phelps
  * MIT Licensed
- * https://github.com/jayphelps/ember-computed-controller
+ * https://github.com/jayphelps/ember-computed-content-controller
  * @license
  */
 (function (Ember) {
@@ -12,7 +12,7 @@
       computed = Ember.computed,
       Container = Ember.Container;
 
-  computed.controller = function (controllerName, contentPath, options) {
+  computed.contentController = function (controllerName, contentPath, options) {
     var fullName = 'controller:' + controllerName;
 
     options = merge({ singleton: false }, options);
