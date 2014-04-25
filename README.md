@@ -61,6 +61,6 @@ Only for users who stray outside the Ember-idiomatic beaten path and manually cr
 Instances must have an `Ember.Container` assigned at `this.container`. Ember will handle this for you when resolving routes, controllers, views, etc but if you manually `.create()` a class, it does not come with a container, so it won't be able to resolve your dependency. You can either pass an existing container along or use the container itself to create your class instances. [Learn more](https://github.com/emberjs/website/pull/1293)
 
 ## Credit
-@mmum came up with this technique in a [rejected Pull Request](https://github.com/emberjs/ember.js/pull/3424) but gave me permission to steal it.
+[@mmum](https://github.com/mmun) came up with this technique in a [rejected Pull Request](https://github.com/emberjs/ember.js/pull/3424) but gave me permission to steal it.
 ## License
 MIT Licensed
