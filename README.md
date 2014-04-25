@@ -5,6 +5,8 @@ A computed property for injecting an unique instance of a controller into an Emb
 
 ## Usage
 
+*ComputedProperty* **Ember.computed.controller** (*String* controllerName, *String* contentPath)
+
 #### ES5 (traditional)
 
 ```javascript
