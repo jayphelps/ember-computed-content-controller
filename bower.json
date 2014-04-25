@@ -1,7 +1,7 @@
 {
-  "name": "ember-computed-controller",
-  "version": "0.1.0",
-  "main": "ember-computed-controller.js",
+  "name": "ember-computed-content-controller",
+  "version": "0.2.0",
+  "main": "ember-computed-content-controller.js",
   "dependencies": {
     "ember": ">= 1.0.0"
   }
