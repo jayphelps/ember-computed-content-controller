@@ -7,6 +7,7 @@
  */
 (function (Ember) {
   var get = Ember.get,
+      set = Ember.set,
       merge = Ember.merge,
       computed = Ember.computed,
       Container = Ember.Container;
