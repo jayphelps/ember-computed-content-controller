@@ -1,17 +1,17 @@
-ember-computed-controller
+ember-computed-content-controller
 ========================
 
-A computed property for injecting an unique instance of a controller into an Ember class instance. Useful for nested `ArrayControllers` and cleaning up your templates.
+A computed property for injecting an unique instance of a content controller (`ObjectController`, `ArrayController`, etc) into an Ember class instance. Useful for nested `ArrayControllers` and cleaning up your templates.
 
 ## Usage
 
-*ComputedProperty* **Ember.computed.controller** (*String* controllerName, *String* contentPath)
+*ComputedProperty* **Ember.computed.contentController** (*String* controllerName, *String* contentPath)
 
 #### ES5 (traditional)
 
 ```javascript
 App.IndexController = Ember.ObjectController.extend({
-  posts: Ember.computed.controller('posts', 'blog.posts')
+  posts: Ember.computed.contentController('posts', 'blog.posts')
 });
 
 App.PostsController = Ember.ArrayController.extend({
@@ -19,7 +19,7 @@ App.PostsController = Ember.ArrayController.extend({
 });
   
 App.PostController = Ember.ObjectController.extend({
-  comments: Ember.computed.controller('comments', 'content.comments')
+  comments: Ember.computed.contentController('comments', 'content.comments')
 });
   
 App.CommentsController = Ember.ArrayController.extend({
@@ -52,7 +52,7 @@ App.CommentController = Ember.ObjectController.extend({
 
 ```javascript
 App.PostController = Ember.ObjectController.extend({
-  comments: Ember.computed.controller('comments', 'content.comments', { singleton: true })
+  comments: Ember.computed.contentController('comments', 'content.comments', { singleton: true })
 });
 ```
 
