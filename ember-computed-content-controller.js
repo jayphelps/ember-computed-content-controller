@@ -19,7 +19,7 @@
 
     return computed('container', contentPath, function () {
       var container = get(this, 'container');
-      Ember.assert('Ember.computed.controller requires target to have an Ember.Container at this.container but none was found. You\'re probably manually creating objects? Learn about containers: https://github.com/emberjs/website/pull/1293', container instanceof Container);
+      Ember.assert('Ember.computed.contentController requires target to have an Ember.Container at this.container but none was found. You\'re probably manually creating objects? Learn about containers: https://github.com/emberjs/website/pull/1293', container instanceof Container);
       
       var controller = container.lookup(fullName, options);
       
