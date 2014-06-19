@@ -1,7 +1,7 @@
 ember-computed-content-controller
 ========================
 
-A computed property for injecting an unique instance of a content controller (`ObjectController`, `ArrayController`, etc) into an Ember class instance. Useful for nested `ArrayControllers` and cleaning up your templates.
+A computed property for injecting a unique instance of a content controller (`ObjectController`, `ArrayController`, etc) into an Ember class instance. Useful for nested `ArrayControllers` and cleaning up your templates.
 
 ## Usage
 
