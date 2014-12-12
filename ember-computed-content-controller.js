@@ -6,6 +6,8 @@
  * @license
  */
 (function (Ember) {
+  if (Ember === undefined) throw new Error('Ember.js must be loaded before Ember.computed.contentController');
+
   var get = Ember.get,
       set = Ember.set,
       merge = Ember.merge,
