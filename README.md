@@ -36,13 +36,12 @@ App.CommentController = Ember.ObjectController.extend({
 
 ```handlebars
 <script type="text/x-handlebars" id="index">
-<p>{{posts}}
-{{#each posts}}
-  <div {{bind-attr class="comments.anySelected:highlighted"}}>
-  <p class="a">{{this}}</p>
-  <p class="b">{{comments}}</p>
-  {{#each comments}}
-    <p class="c">{{input type="checkbox" checked=isSelected}} {{this}}</p>
+{{#each post in posts}}
+  <div {{bind-attr class="post.comments.anySelected:highlighted"}}>
+  <p>{{post.body}}</p>
+  <p>{{post.comments}}</p>
+  {{#each comment in post.comments}}
+    <p>{{input type="checkbox" checked=comment.isSelected}} {{comment.body}}</p>
   {{/each}}
   </div>
 {{/each}}
