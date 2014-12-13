@@ -5,7 +5,7 @@ A computed property for injecting a unique instance of a content controller (`Ob
 
 ## Usage
 
-*ComputedProperty* **Ember.computed.contentController** (*String* controllerName, *String* contentPath)
+Ember.computed.contentController(controllerName: *String*, contentPath: *String*): *ComputedProperty*
 
 #### ES5 (traditional)
 
